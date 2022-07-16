@@ -1,0 +1,10 @@
+V3 7
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FF.v" 2022/07/16.19:26:22 J.36
+MO work/JK_FF \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FF.v"
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_tb.v" 2022/07/16.20:22:02 J.36
+MO work/JK_tb_v \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_tb.v" \
+      MI JK_FF
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v
