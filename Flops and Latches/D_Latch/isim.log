@@ -1,0 +1,40 @@
+ command line:
+   ./D_LATCH_tb_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  62554
+
+Sun Jul 17 15:55:10 2022
+
+Total Line Count : 63
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 156.836 Meg. 
+
+ Total Signals          : 13
+ Total Nets             : 12
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 132
+ntrace select -o on -n /D_LATCH_tb_v/q 
+ntrace select -o on -n /D_LATCH_tb_v/enable 
+ntrace select -o on -n /D_LATCH_tb_v/d 
+ntrace select -o on -n /D_LATCH_tb_v/reset 
+ntrace select -o on -n /D_LATCH_tb_v/delay1 
+ntrace select -o on -n /D_LATCH_tb_v/delay2 
+ntrace select -o on -n /D_LATCH_tb_v/i 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.046875 sec.
+
+ Estimate current memory usage : 164.835 Meg. 
+
+Sun Jul 17 16:01:50 2022
+

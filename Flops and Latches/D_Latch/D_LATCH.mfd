@@ -1,0 +1,17 @@
+MDF Database:  version 1.0
+MDF_INFO | D_LATCH | XA9536XL-15-VQ44
+MACROCELL | 0 | 1 | q_OBUF
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 4 | q  | enable  | reset  | d
+INPUTMC | 1 | 0 | 1
+INPUTP | 3 | 45 | 42 | 44
+EQ | 3 | 
+   q = q & !enable & reset
+	# q & reset & d
+	# enable & reset & d;
+
+PIN | reset | 64 | 0 | N/A | 42 | 1 | 0 | 1
+PIN | enable | 64 | 0 | N/A | 45 | 1 | 0 | 1
+PIN | d | 64 | 0 | N/A | 44 | 1 | 0 | 1
+PIN | q | 536871040 | 0 | N/A | 8

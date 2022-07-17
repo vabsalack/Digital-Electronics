@@ -1,0 +1,38 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -ifn D_LATCH.xst -ofn D_LATCH.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -dd _ngo -i -p xa9500xl "D_LATCH.ngc" D_LATCH.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper D_LATCH.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" D_LATCH_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise D_LATCH D_LATCH.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -f D_LATCH -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_LATCH_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -s IEEE1149 -i D_LATCH
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -ifn D_LATCH.xst -ofn D_LATCH.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -ifn D_LATCH.xst -ofn D_LATCH.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -dd _ngo -i -p xa9500xl "D_LATCH.ngc" D_LATCH.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper D_LATCH.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" D_LATCH_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise D_LATCH D_LATCH.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -f D_LATCH -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_LATCH_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -s IEEE1149 -i D_LATCH
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -ifn D_LATCH.xst -ofn D_LATCH.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -ifn D_LATCH.xst -ofn D_LATCH.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -ifn D_LATCH.xst -ofn D_LATCH.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -dd _ngo -i -p xa9500xl "D_LATCH.ngc" D_LATCH.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper D_LATCH.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" D_LATCH_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise D_LATCH D_LATCH.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -f D_LATCH -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_LATCH_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -s IEEE1149 -i D_LATCH
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -ifn D_LATCH.xst -ofn D_LATCH.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -dd _ngo -i -p xa9500xl "D_LATCH.ngc" D_LATCH.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper D_LATCH.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" D_LATCH_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise D_LATCH D_LATCH.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -f D_LATCH -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_LATCH_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -s IEEE1149 -i D_LATCH
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -ifn D_LATCH.xst -ofn D_LATCH.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -dd _ngo -i -p xa9500xl "D_LATCH.ngc" D_LATCH.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper D_LATCH.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" D_LATCH_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise D_LATCH D_LATCH.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -intstyle ise -f D_LATCH -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_LATCH_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_Latch/D_Latch.ise" -s IEEE1149 -i D_LATCH
