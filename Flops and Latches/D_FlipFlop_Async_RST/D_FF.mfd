@@ -1,0 +1,16 @@
+MDF Database:  version 1.0
+MDF_INFO | D_FF | XA9536XL-15-VQ44
+MACROCELL | 0 | 1 | q_OBUF
+ATTRIBUTES | 8692483 | 0
+INPUTS | 1 | d
+INPUTP | 1 | 44
+EQ | 3 | 
+   q.D = d;
+   q.CLK = clk;	// GCK
+   !q.AR = rstn;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | rstn
+
+PIN | d | 64 | 0 | N/A | 44 | 1 | 0 | 1
+PIN | clk | 4096 | 0 | N/A | 10 | 1 | 0 | 1
+PIN | rstn | 65536 | 0 | N/A | 47 | 1 | 0 | 1
+PIN | q | 536871040 | 0 | N/A | 8

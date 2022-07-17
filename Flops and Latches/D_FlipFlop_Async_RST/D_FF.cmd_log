@@ -1,0 +1,15 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -ifn D_FF.xst -ofn D_FF.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -ifn D_FF.xst -ofn D_FF.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -dd _ngo -i -p xa9500xl "D_FF.ngc" D_FF.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper D_FF.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" D_FF_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise D_FF D_FF.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -f D_FF -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FF_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -s IEEE1149 -i D_FF
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -ifn D_FF.xst -ofn D_FF.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -dd _ngo -i -p xa9500xl "D_FF.ngc" D_FF.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper D_FF.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" D_FF_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise D_FF D_FF.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -intstyle ise -f D_FF -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FF_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/D_FlipFlop_Async_RST/D_FlipFlop_Async_RST.ise" -s IEEE1149 -i D_FF
