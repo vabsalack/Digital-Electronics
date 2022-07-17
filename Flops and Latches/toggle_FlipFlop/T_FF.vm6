@@ -1,0 +1,86 @@
+NDS Database:  version J.36
+
+NDS_INFO | xa9500xl | A9536XL44VQ | XA9536XL-15-VQ44
+
+DEVICE | A9536XL | A9536XL44VQ | 
+
+NETWORK | T_FF | 0 | 0 | 16793607
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | T_FF_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 108 | PI | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 102 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | rstn_IBUF | T_FF_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | rstn | 110 | PI | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | rstn_IBUF | 106 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | t_IBUF | T_FF_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | t | 109 | PI | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | t_IBUF | 105 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | t_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | q_OBUF | T_FF_COPY_0_COPY_0 | 2155873281 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_OBUF | 104 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | q_OBUF.Q | q_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | t_IBUF | 105 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | t_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 106 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 102 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_OBUF$Q | 103 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | q_OBUF.Q | q_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_OBUF | 104 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | q_OBUF.Q | q_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_OBUF.SI | q_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_OBUF | 104 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | q_OBUF.Q | q_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | t_IBUF | 105 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | t_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 106 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_OBUF.D1 | 112 | ? | 0 | 4096 | q_OBUF | NULL | NULL | q_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_OBUF.D2 | 113 | ? | 0 | 4096 | q_OBUF | NULL | NULL | q_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | q_OBUF | IV_FALSE | t_IBUF | IV_TRUE | rstn_IBUF
+SPPTERM | 3 | IV_FALSE | q_OBUF | IV_TRUE | t_IBUF | IV_TRUE | rstn_IBUF
+
+SRFF_INSTANCE | q_OBUF.REG | q_OBUF | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_OBUF.D | 111 | ? | 0 | 0 | q_OBUF | NULL | NULL | q_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 102 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_OBUF.Q | 114 | ? | 0 | 0 | q_OBUF | NULL | NULL | q_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | q | T_FF_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_OBUF$Q | 103 | ? | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | q_OBUF.Q | q_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q | 107 | PO | 0 | 0 | T_FF_COPY_0_COPY_0 | NULL | NULL | q | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | T_FF_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 43 | 57344
+
+FB_INSTANCE | FOOBAR2_ | T_FF_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | q_OBUF | 1 | NULL | 0 | q | 1 | 38 | 49152
+FBPIN | 8 | NULL | 0 | rstn_IBUF | 1 | NULL | 0 | 31 | 49152
+FBPIN | 11 | NULL | 0 | t_IBUF | 1 | NULL | 0 | 28 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | T_FF_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 1 | q_OBUF | NULL | 3 | t | 28 | 44 | rstn | 31
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | 19 | -1 | 39 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 38 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk | 0 | 0

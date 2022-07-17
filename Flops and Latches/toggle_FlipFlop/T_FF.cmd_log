@@ -1,0 +1,7 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/toggle_FlipFlop/toggle_FlipFlop.ise" -intstyle ise -ifn T_FF.xst -ofn T_FF.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/toggle_FlipFlop/toggle_FlipFlop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "T_FF.ngc" T_FF.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/toggle_FlipFlop/toggle_FlipFlop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper T_FF.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/toggle_FlipFlop/toggle_FlipFlop.ise" T_FF_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/toggle_FlipFlop/toggle_FlipFlop.ise" -intstyle ise T_FF T_FF.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/toggle_FlipFlop/toggle_FlipFlop.ise" -intstyle ise -f T_FF -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/toggle_FlipFlop/T_FF_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/toggle_FlipFlop/toggle_FlipFlop.ise" -s IEEE1149 -i T_FF
