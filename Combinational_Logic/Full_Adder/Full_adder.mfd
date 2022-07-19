@@ -1,0 +1,25 @@
+MDF Database:  version 1.0
+MDF_INFO | Full_adder | XA9536XL-15-VQ44
+MACROCELL | 1 | 1 | carry_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 3 | b  | carry_in  | a
+INPUTP | 3 | 45 | 42 | 44
+EQ | 3 | 
+   carry = b & a
+	# b & carry_in
+	# a & carry_in;
+
+MACROCELL | 0 | 1 | sum_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 3 | a  | b  | carry_in
+INPUTP | 3 | 44 | 45 | 42
+EQ | 3 | 
+   !sum = a
+	$ b & carry_in
+	# !b & !carry_in;
+
+PIN | b | 64 | 0 | N/A | 45 | 2 | 1 | 1 | 0 | 1
+PIN | a | 64 | 0 | N/A | 44 | 2 | 1 | 1 | 0 | 1
+PIN | carry_in | 64 | 0 | N/A | 42 | 2 | 1 | 1 | 0 | 1
+PIN | carry | 536871040 | 0 | N/A | 5
+PIN | sum | 536871040 | 0 | N/A | 8

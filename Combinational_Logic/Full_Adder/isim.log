@@ -1,0 +1,39 @@
+ command line:
+   ./full_adder_tb_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  63151
+
+Tue Jul 19 09:38:51 2022
+
+Total Line Count : 55
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 157.094 Meg. 
+
+ Total Signals          : 15
+ Total Nets             : 13
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 127
+ntrace select -o on -n /full_adder_tb_v/sum 
+ntrace select -o on -n /full_adder_tb_v/carry 
+ntrace select -o on -n /full_adder_tb_v/carry_in 
+ntrace select -o on -n /full_adder_tb_v/a 
+ntrace select -o on -n /full_adder_tb_v/b 
+ntrace select -o on -n /full_adder_tb_v/i 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.03125 sec.
+
+ Estimate current memory usage : 165.093 Meg. 
+
+Tue Jul 19 09:39:47 2022
+

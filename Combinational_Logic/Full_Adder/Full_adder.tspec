@@ -1,0 +1,6 @@
+AUTO_TS_P2P:FROM:b:TO:carry:1
+AUTO_TS_P2P:FROM:a:TO:carry:1
+AUTO_TS_P2P:FROM:carry_in:TO:carry:1
+AUTO_TS_P2P:FROM:a:TO:sum:1
+AUTO_TS_P2P:FROM:b:TO:sum:1
+AUTO_TS_P2P:FROM:carry_in:TO:sum:1

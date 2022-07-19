@@ -1,0 +1,10 @@
+V3 7
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_adder.v" 2022/07/19.09:29:09 J.36
+MO isim_temp/Full_adder \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_adder.v"
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/full_adder_tb.v" 2022/07/19.09:34:23 J.36
+MO isim_temp/full_adder_tb_v \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/full_adder_tb.v" \
+      MI Full_adder
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO isim_temp/glbl FL $XILINX/verilog/src/glbl.v

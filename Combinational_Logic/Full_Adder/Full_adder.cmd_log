@@ -1,0 +1,8 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_Adder.ise" -intstyle ise -ifn Full_adder.xst -ofn Full_adder.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_Adder.ise" -intstyle ise -ifn Full_adder.xst -ofn Full_adder.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "Full_adder.ngc" Full_adder.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Full_adder.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_Adder.ise" Full_adder_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_Adder.ise" -intstyle ise Full_adder Full_adder.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_Adder.ise" -intstyle ise -f Full_adder -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_adder_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Full_Adder/Full_Adder.ise" -s IEEE1149 -i Full_adder
