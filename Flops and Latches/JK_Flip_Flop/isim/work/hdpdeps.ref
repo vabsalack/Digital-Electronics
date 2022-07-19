@@ -1,7 +1,14 @@
-V3 7
+V3 12
 FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FF.v" 2022/07/16.19:26:22 J.36
 MO work/JK_FF \
       FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FF.v"
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FlipFlop_01.v" 2022/07/19.11:44:26 J.36
+MO work/JK_FlipFlop_01 \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FlipFlop_01.v"
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FlipFlop_01_tb.v" 2022/07/19.11:56:15 J.36
+MO work/JK_FlipFlop_01_tb_v \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FlipFlop_01_tb.v" \
+      MI JK_FlipFlop_01
 FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_tb.v" 2022/07/16.20:22:02 J.36
 MO work/JK_tb_v \
       FL "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_tb.v" \

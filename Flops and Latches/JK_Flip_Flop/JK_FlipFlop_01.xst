@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn JK_FlipFlop_01.prj
+-ifmt mixed
