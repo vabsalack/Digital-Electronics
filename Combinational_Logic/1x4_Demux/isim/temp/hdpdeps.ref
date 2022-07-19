@@ -1,0 +1,10 @@
+V3 7
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/Demun_4x1.v" 2022/07/19.09:50:52 J.36
+MO isim_temp/Demun_4x1 \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/Demun_4x1.v"
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/demux_4x1_tb.v" 2022/07/19.09:54:34 J.36
+MO isim_temp/demux_4x1_tb_v \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/demux_4x1_tb.v" \
+      MI Demun_4x1
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO isim_temp/glbl FL $XILINX/verilog/src/glbl.v

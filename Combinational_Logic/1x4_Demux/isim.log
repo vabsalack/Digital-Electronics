@@ -1,0 +1,40 @@
+ command line:
+   ./demux_4x1_tb_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  63199
+
+Tue Jul 19 09:55:33 2022
+
+Total Line Count : 57
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 156.901 Meg. 
+
+ Total Signals          : 18
+ Total Nets             : 15
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 129
+ntrace select -o on -n /demux_4x1_tb_v/a 
+ntrace select -o on -n /demux_4x1_tb_v/b 
+ntrace select -o on -n /demux_4x1_tb_v/c 
+ntrace select -o on -n /demux_4x1_tb_v/d 
+ntrace select -o on -n /demux_4x1_tb_v/sel 
+ntrace select -o on -n /demux_4x1_tb_v/f 
+ntrace select -o on -n /demux_4x1_tb_v/i 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.03125 sec.
+
+ Estimate current memory usage : 169.619 Meg. 
+
+Tue Jul 19 09:56:00 2022
+

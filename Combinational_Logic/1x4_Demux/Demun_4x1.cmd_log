@@ -1,0 +1,22 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -ifn Demun_4x1.xst -ofn Demun_4x1.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -ifn Demun_4x1.xst -ofn Demun_4x1.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -dd _ngo -i -p xa9500xl "Demun_4x1.ngc" Demun_4x1.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Demun_4x1.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" Demun_4x1_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise Demun_4x1 Demun_4x1.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -f Demun_4x1 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/Demun_4x1_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -s IEEE1149 -i Demun_4x1
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -ifn Demun_4x1.xst -ofn Demun_4x1.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -dd _ngo -i -p xa9500xl "Demun_4x1.ngc" Demun_4x1.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Demun_4x1.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" Demun_4x1_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise Demun_4x1 Demun_4x1.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -f Demun_4x1 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/Demun_4x1_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -s IEEE1149 -i Demun_4x1
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -ifn Demun_4x1.xst -ofn Demun_4x1.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -dd _ngo -i -p xa9500xl "Demun_4x1.ngc" Demun_4x1.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Demun_4x1.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" Demun_4x1_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise Demun_4x1 Demun_4x1.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -intstyle ise -f Demun_4x1 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/Demun_4x1_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/1x4_Demux/1x4_Demux.ise" -s IEEE1149 -i Demun_4x1

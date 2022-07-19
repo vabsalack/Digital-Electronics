@@ -1,0 +1,37 @@
+MDF Database:  version 1.0
+MDF_INFO | Demun_4x1 | XA9536XL-15-VQ44
+MACROCELL | 1 | 1 | a_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 3 | f  | sel<1>  | sel<0>
+INPUTP | 3 | 44 | 37 | 45
+EQ | 1 | 
+   a = f & !sel<1> & !sel<0>;
+
+MACROCELL | 0 | 10 | d_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 3 | f  | sel<1>  | sel<0>
+INPUTP | 3 | 44 | 37 | 45
+EQ | 1 | 
+   d = f & sel<1> & sel<0>;
+
+MACROCELL | 1 | 10 | b_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 3 | f  | sel<1>  | sel<0>
+INPUTP | 3 | 44 | 37 | 45
+EQ | 1 | 
+   b = f & !sel<1> & sel<0>;
+
+MACROCELL | 0 | 1 | c_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 3 | f  | sel<1>  | sel<0>
+INPUTP | 3 | 44 | 37 | 45
+EQ | 1 | 
+   c = f & sel<1> & !sel<0>;
+
+PIN | f | 64 | 0 | N/A | 44 | 4 | 1 | 1 | 0 | 10 | 1 | 10 | 0 | 1
+PIN | sel<1> | 64 | 0 | N/A | 37 | 4 | 1 | 1 | 0 | 10 | 1 | 10 | 0 | 1
+PIN | sel<0> | 64 | 0 | N/A | 45 | 4 | 1 | 1 | 0 | 10 | 1 | 10 | 0 | 1
+PIN | a | 536871040 | 0 | N/A | 5
+PIN | d | 536871040 | 0 | N/A | 18
+PIN | b | 536871040 | 0 | N/A | 42
+PIN | c | 536871040 | 0 | N/A | 8
