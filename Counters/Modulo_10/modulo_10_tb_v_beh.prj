@@ -1,0 +1,3 @@
+verilog work "Modulo_10.v"
+verilog work "modulo_10_tb.v"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

@@ -1,0 +1,234 @@
+NDS Database:  version J.36
+
+NDS_INFO | xa9500xl | A9536XL44VQ | XA9536XL-15-VQ44
+
+DEVICE | A9536XL | A9536XL44VQ | 
+
+NETWORK | Modulo_10 | 0 | 0 | 16793607
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | Modulo_10_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 384 | PI | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | rstn_IBUF | Modulo_10_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | rstn | 385 | PI | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | out_0 | Modulo_10_COPY_0_COPY_0 | 2155873281 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | out_0$Q | 371 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | out_0.SI | out_0 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out_0.D1 | 387 | ? | 0 | 4096 | out_0 | NULL | NULL | out_0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | out_0.D2 | 388 | ? | 0 | 4096 | out_0 | NULL | NULL | out_0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | out_0 | IV_TRUE | rstn_IBUF
+
+SRFF_INSTANCE | out_0.REG | out_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | out_0.D | 386 | ? | 0 | 0 | out_0 | NULL | NULL | out_0.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | out_0.Q | 389 | ? | 0 | 0 | out_0 | NULL | NULL | out_0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | out_1 | Modulo_10_COPY_0_COPY_0 | 2155873281 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_1 | 374 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_3 | 378 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_3.Q | out_3 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_2 | 376 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | out_1$Q | 373 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | out_1 | 374 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | out_1.SI | out_1 | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_1 | 374 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_3 | 378 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_3.Q | out_3 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_2 | 376 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out_1.D1 | 391 | ? | 0 | 4096 | out_1 | NULL | NULL | out_1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | out_1.D2 | 392 | ? | 0 | 4096 | out_1 | NULL | NULL | out_1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | out_0 | IV_TRUE | out_1 | IV_TRUE | rstn_IBUF
+SPPTERM | 4 | IV_TRUE | out_0 | IV_FALSE | out_1 | IV_TRUE | out_2 | IV_TRUE | rstn_IBUF
+SPPTERM | 4 | IV_TRUE | out_0 | IV_FALSE | out_1 | IV_FALSE | out_3 | IV_TRUE | rstn_IBUF
+
+SRFF_INSTANCE | out_1.REG | out_1 | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | out_1.D | 390 | ? | 0 | 0 | out_1 | NULL | NULL | out_1.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | out_1.Q | 393 | ? | 0 | 0 | out_1 | NULL | NULL | out_1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+Tff+OptxMapped | out_2 | Modulo_10_COPY_0_COPY_0 | 2155877377 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_1 | 374 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_2 | 376 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | out_2$Q | 375 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | out_2 | 376 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | out_2.SI | out_2 | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_1 | 374 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_2 | 376 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out_2.D1 | 395 | ? | 0 | 4096 | out_2 | NULL | NULL | out_2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | out_2.D2 | 396 | ? | 0 | 4096 | out_2 | NULL | NULL | out_2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | out_2 | IV_FALSE | rstn_IBUF
+SPPTERM | 3 | IV_TRUE | out_0 | IV_TRUE | out_1 | IV_TRUE | rstn_IBUF
+
+SRFF_INSTANCE | out_2.REG | out_2 | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | out_2.D | 394 | ? | 0 | 0 | out_2 | NULL | NULL | out_2.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | out_2.Q | 397 | ? | 0 | 0 | out_2 | NULL | NULL | out_2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+Tff+OptxMapped | out_3 | Modulo_10_COPY_0_COPY_0 | 2155877377 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_1 | 374 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_2 | 376 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_3 | 378 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_3.Q | out_3 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | out_3$Q | 377 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_3.Q | out_3 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | out_3 | 378 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_3.Q | out_3 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | out_3.SI | out_3 | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_0 | 372 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_1 | 374 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_2 | 376 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rstn_IBUF | 379 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out_3 | 378 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_3.Q | out_3 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out_3.D1 | 399 | ? | 0 | 4096 | out_3 | NULL | NULL | out_3.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | out_3.D2 | 400 | ? | 0 | 4096 | out_3 | NULL | NULL | out_3.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | out_3 | IV_FALSE | rstn_IBUF
+SPPTERM | 4 | IV_TRUE | out_0 | IV_TRUE | out_1 | IV_TRUE | out_2 | IV_TRUE | rstn_IBUF
+SPPTERM | 4 | IV_TRUE | out_0 | IV_FALSE | out_1 | IV_FALSE | out_2 | IV_TRUE | out_3
+
+SRFF_INSTANCE | out_3.REG | out_3 | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | out_3.D | 398 | ? | 0 | 0 | out_3 | NULL | NULL | out_3.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 370 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | out_3.Q | 401 | ? | 0 | 0 | out_3 | NULL | NULL | out_3.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | out<0> | Modulo_10_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | out_0$Q | 371 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_0.Q | out_0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | out<0> | 380 | PO | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | out<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | out<1> | Modulo_10_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | out_1$Q | 373 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_1.Q | out_1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | out<1> | 381 | PO | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | out<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | out<2> | Modulo_10_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | out_2$Q | 375 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_2.Q | out_2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | out<2> | 382 | PO | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | out<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | out<3> | Modulo_10_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | out_3$Q | 377 | ? | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | out_3.Q | out_3 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | out<3> | 383 | PO | 0 | 0 | Modulo_10_COPY_0_COPY_0 | NULL | NULL | out<3> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | Modulo_10_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | out_2 | 1 | NULL | 0 | out<2> | 1 | 41 | 49152
+FBPIN | 3 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 43 | 57344
+FBPIN | 11 | out_0 | 1 | NULL | 0 | out<0> | 1 | 7 | 49152
+
+FB_INSTANCE | FOOBAR2_ | Modulo_10_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | out_1 | 1 | NULL | 0 | out<1> | 1 | 38 | 49152
+FBPIN | 9 | NULL | 0 | rstn_IBUF | 1 | NULL | 0 | 30 | 49152
+FBPIN | 11 | out_3 | 1 | NULL | 0 | out<3> | 1 | 28 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | Modulo_10_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | OUT<3:0> | 4 | 0 | 1 | out<0> | 3 | out<1> | 2 | out<2> | 1 | out<3> | 0
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 1 | out_2 | NULL | 25 | out_0 | NULL | 28 | out_1 | NULL | 50 | rstn | 30
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | 1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 10 | -1 | -1 | 19 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 36 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 1 | out_2 | NULL | 25 | out_0 | NULL | 28 | out_1 | NULL | 39 | out_3 | NULL | 50 | rstn | 30
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | 1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 10 | -1 | -1 | 19 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 28 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 36 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk | 0 | 0

@@ -1,0 +1,36 @@
+ command line:
+   ./modulo_10_tb_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  63721
+
+Tue Jul 19 12:20:09 2022
+
+Total Line Count : 49
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 157.168 Meg. 
+
+ Total Signals          : 12
+ Total Nets             : 14
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 95
+ntrace select -o on -n /modulo_10_tb_v/out 
+ntrace select -o on -n /modulo_10_tb_v/clk 
+ntrace select -o on -n /modulo_10_tb_v/rstn 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.015625 sec.
+
+ Estimate current memory usage : 162.808 Meg. 
+
+Tue Jul 19 12:21:14 2022
+

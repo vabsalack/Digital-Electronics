@@ -1,0 +1,36 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_out0: FDCPE port map (out(0),out_D(0),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_D(0) <= (NOT out(0) AND rstn);
+</td></tr><tr><td>
+FDCPE_out1: FDCPE port map (out(1),out_D(1),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_D(1) <= ((NOT out(0) AND out(1) AND rstn)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND NOT out(1) AND out(2) AND rstn)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND NOT out(1) AND NOT out(3) AND rstn));
+</td></tr><tr><td>
+FTCPE_out2: FTCPE port map (out(2),out_T(2),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_T(2) <= ((out(2) AND NOT rstn)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND out(1) AND rstn));
+</td></tr><tr><td>
+FTCPE_out3: FTCPE port map (out(3),out_T(3),clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_T(3) <= ((out(3) AND NOT rstn)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND out(1) AND out(2) AND rstn)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND NOT out(1) AND NOT out(2) AND out(3)));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

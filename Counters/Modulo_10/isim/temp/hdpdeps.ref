@@ -1,0 +1,10 @@
+V3 7
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.v" 2022/07/19.12:19:31 J.36
+MO isim_temp/Modulo_10 \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.v"
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/modulo_10_tb.v" 2022/07/19.12:20:04 J.36
+MO isim_temp/modulo_10_tb_v \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/modulo_10_tb.v" \
+      MI Modulo_10
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO isim_temp/glbl FL $XILINX/verilog/src/glbl.v

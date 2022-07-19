@@ -1,0 +1,57 @@
+MDF Database:  version 1.0
+MDF_INFO | Modulo_10 | XA9536XL-15-VQ44
+MACROCELL | 0 | 10 | out_0
+ATTRIBUTES | 8815363 | 0
+OUTPUTMC | 4 | 0 | 10 | 1 | 1 | 0 | 1 | 1 | 10
+INPUTS | 2 | out<0>  | rstn
+INPUTMC | 1 | 0 | 10
+INPUTP | 1 | 44
+EQ | 2 | 
+   out<0>.D = !out<0> & rstn;
+   out<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 1 | out_1
+ATTRIBUTES | 8815363 | 0
+OUTPUTMC | 3 | 1 | 1 | 0 | 1 | 1 | 10
+INPUTS | 5 | out<0>  | out<1>  | rstn  | out<3>  | out<2>
+INPUTMC | 4 | 0 | 10 | 1 | 1 | 1 | 10 | 0 | 1
+INPUTP | 1 | 44
+EQ | 4 | 
+   out<1>.D = !out<0> & out<1> & rstn
+	# out<0> & !out<1> & out<2> & rstn
+	# out<0> & !out<1> & !out<3> & rstn;
+   out<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 1 | out_2
+ATTRIBUTES | 4621059 | 0
+OUTPUTMC | 3 | 1 | 1 | 0 | 1 | 1 | 10
+INPUTS | 4 | out<0>  | out<1>  | rstn  | out<2>
+INPUTMC | 3 | 0 | 10 | 1 | 1 | 0 | 1
+INPUTP | 1 | 44
+EQ | 3 | 
+   out<2>.T = out<2> & !rstn
+	# out<0> & out<1> & rstn;
+   out<2>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 10 | out_3
+ATTRIBUTES | 4621059 | 0
+OUTPUTMC | 2 | 1 | 1 | 1 | 10
+INPUTS | 5 | out<0>  | out<1>  | out<2>  | rstn  | out<3>
+INPUTMC | 4 | 0 | 10 | 1 | 1 | 0 | 1 | 1 | 10
+INPUTP | 1 | 44
+EQ | 4 | 
+   out<3>.T = out<3> & !rstn
+	# out<0> & out<1> & out<2> & rstn
+	# out<0> & !out<1> & !out<2> & out<3>;
+   out<3>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+PIN | clk | 4096 | 0 | N/A | 10 | 4 | 0 | 10 | 1 | 1 | 0 | 1 | 1 | 10
+PIN | rstn | 64 | 0 | N/A | 44 | 4 | 0 | 10 | 1 | 1 | 0 | 1 | 1 | 10
+PIN | out<0> | 536871040 | 0 | N/A | 18
+PIN | out<1> | 536871040 | 0 | N/A | 5
+PIN | out<2> | 536871040 | 0 | N/A | 8
+PIN | out<3> | 536871040 | 0 | N/A | 42

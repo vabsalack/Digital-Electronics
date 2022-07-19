@@ -1,0 +1,3 @@
+verilog isim_temp "Modulo_10.v"
+verilog isim_temp "modulo_10_tb.v"
+verilog isim_temp "C:/Xilinx92i/verilog/src/glbl.v"

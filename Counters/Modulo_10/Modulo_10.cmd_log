@@ -1,0 +1,15 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -ifn Modulo_10.xst -ofn Modulo_10.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -ifn Modulo_10.xst -ofn Modulo_10.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -dd _ngo -i -p xa9500xl "Modulo_10.ngc" Modulo_10.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Modulo_10.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" Modulo_10_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise Modulo_10 Modulo_10.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -f Modulo_10 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -s IEEE1149 -i Modulo_10
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -ifn Modulo_10.xst -ofn Modulo_10.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -dd _ngo -i -p xa9500xl "Modulo_10.ngc" Modulo_10.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Modulo_10.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" Modulo_10_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise Modulo_10 Modulo_10.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -intstyle ise -f Modulo_10 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Counters/Modulo_10/Modulo_10.ise" -s IEEE1149 -i Modulo_10
