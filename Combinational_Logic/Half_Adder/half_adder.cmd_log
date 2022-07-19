@@ -1,0 +1,7 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Half_Adder/Half_Adder.ise" -intstyle ise -ifn half_adder.xst -ofn half_adder.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Half_Adder/Half_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "half_adder.ngc" half_adder.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Half_Adder/Half_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper half_adder.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Half_Adder/Half_Adder.ise" half_adder_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Half_Adder/Half_Adder.ise" -intstyle ise half_adder half_adder.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Half_Adder/Half_Adder.ise" -intstyle ise -f half_adder -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Half_Adder/half_adder_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Half_Adder/Half_Adder.ise" -s IEEE1149 -i half_adder
