@@ -1,0 +1,7 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_Flip_Flop.ise" -intstyle ise -ifn JK_FlipFlop_01.xst -ofn JK_FlipFlop_01.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_Flip_Flop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "JK_FlipFlop_01.ngc" JK_FlipFlop_01.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_Flip_Flop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper JK_FlipFlop_01.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_Flip_Flop.ise" JK_FlipFlop_01_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_Flip_Flop.ise" -intstyle ise JK_FlipFlop_01 JK_FlipFlop_01.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_Flip_Flop.ise" -intstyle ise -f JK_FlipFlop_01 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_FlipFlop_01_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Flops and Latches/JK_Flip_Flop/JK_Flip_Flop.ise" -s IEEE1149 -i JK_FlipFlop_01

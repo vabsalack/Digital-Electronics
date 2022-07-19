@@ -1,0 +1,20 @@
+MDF Database:  version 1.0
+MDF_INFO | JK_FlipFlop_01 | XA9536XL-15-VQ44
+MACROCELL | 0 | 1 | q_OBUF
+ATTRIBUTES | 8823555 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 3 | q  | j  | k
+INPUTMC | 1 | 0 | 1
+INPUTP | 2 | 44 | 45
+EQ | 4 | 
+   q.D = q & !k
+	# !q & j;
+   q.CLK = clk;	// GCK
+   !q.AR = rstn;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | rstn
+
+PIN | clk | 4096 | 0 | N/A | 10 | 1 | 0 | 1
+PIN | rstn | 65536 | 0 | N/A | 47 | 1 | 0 | 1
+PIN | j | 64 | 0 | N/A | 44 | 1 | 0 | 1
+PIN | k | 64 | 0 | N/A | 45 | 1 | 0 | 1
+PIN | q | 536871040 | 0 | N/A | 8
