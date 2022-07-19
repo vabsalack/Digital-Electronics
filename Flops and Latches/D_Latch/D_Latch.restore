@@ -763,9 +763,7 @@ proc restore { { project_dir "" } } {
     RestoreProjectSettings $iProjHelper $project_settings 
   } "A problem occured while restoring project settings."
 
-  set user_files { 
-      "D_LATCH.v" 
-      "D_LATCH_tb.v"}
+  set user_files {}
 
   HandleException {
     AddUserFiles $iProjHelper $user_files
