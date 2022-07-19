@@ -1,0 +1,3 @@
+verilog work "deocder_4x16.v"
+verilog work "decoder_4x16_tb.v"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

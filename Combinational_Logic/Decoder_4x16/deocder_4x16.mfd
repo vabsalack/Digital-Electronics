@@ -1,0 +1,135 @@
+MDF Database:  version 1.0
+MDF_INFO | deocder_4x16 | XA9536XL-15-VQ44
+MACROCELL | 1 | 1 | out_0_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<0> = en & !in<3> & !in<2> & !in<1> & !in<0>;
+
+MACROCELL | 1 | 14 | out_15_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<15> = en & in<3> & in<2> & in<1> & in<0>;
+
+MACROCELL | 1 | 3 | out_10_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<10> = en & in<3> & !in<2> & in<1> & !in<0>;
+
+MACROCELL | 1 | 8 | out_12_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<12> = en & in<3> & in<2> & !in<1> & !in<0>;
+
+MACROCELL | 1 | 16 | out_1_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<1> = en & !in<3> & !in<2> & !in<1> & in<0>;
+
+MACROCELL | 0 | 16 | out_2_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<2> = en & !in<3> & !in<2> & in<1> & !in<0>;
+
+MACROCELL | 0 | 1 | out_3_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<3> = en & !in<3> & !in<2> & in<1> & in<0>;
+
+MACROCELL | 0 | 3 | out_4_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<4> = en & !in<3> & in<2> & !in<1> & !in<0>;
+
+MACROCELL | 0 | 5 | out_5_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<5> = en & !in<3> & in<2> & !in<1> & in<0>;
+
+MACROCELL | 0 | 8 | out_6_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<6> = en & !in<3> & in<2> & in<1> & !in<0>;
+
+MACROCELL | 0 | 12 | out_8_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<8> = en & in<3> & !in<2> & !in<1> & !in<0>;
+
+MACROCELL | 0 | 14 | out_9_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<9> = en & in<3> & !in<2> & !in<1> & in<0>;
+
+MACROCELL | 1 | 6 | out_11_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<11> = en & in<3> & !in<2> & in<1> & in<0>;
+
+MACROCELL | 1 | 10 | out_13_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<13> = en & in<3> & in<2> & !in<1> & in<0>;
+
+MACROCELL | 1 | 12 | out_14_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<14> = en & in<3> & in<2> & in<1> & !in<0>;
+
+MACROCELL | 0 | 10 | out_7_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 5 | en  | in<3>  | in<2>  | in<1>  | in<0>
+INPUTP | 5 | 43 | 35 | 3 | 47 | 45
+EQ | 1 | 
+   out<7> = en & !in<3> & in<2> & in<1> & in<0>;
+
+PIN | en | 64 | 0 | N/A | 43 | 16 | 1 | 1 | 1 | 14 | 1 | 3 | 1 | 8 | 1 | 16 | 0 | 16 | 0 | 1 | 0 | 3 | 0 | 5 | 0 | 8 | 0 | 12 | 0 | 14 | 1 | 6 | 1 | 10 | 1 | 12 | 0 | 10
+PIN | in<3> | 64 | 0 | N/A | 35 | 16 | 1 | 1 | 1 | 14 | 1 | 3 | 1 | 8 | 1 | 16 | 0 | 16 | 0 | 1 | 0 | 3 | 0 | 5 | 0 | 8 | 0 | 12 | 0 | 14 | 1 | 6 | 1 | 10 | 1 | 12 | 0 | 10
+PIN | in<2> | 64 | 0 | N/A | 3 | 16 | 1 | 1 | 1 | 14 | 1 | 3 | 1 | 8 | 1 | 16 | 0 | 16 | 0 | 1 | 0 | 3 | 0 | 5 | 0 | 8 | 0 | 12 | 0 | 14 | 1 | 6 | 1 | 10 | 1 | 12 | 0 | 10
+PIN | in<1> | 64 | 0 | N/A | 47 | 16 | 1 | 1 | 1 | 14 | 1 | 3 | 1 | 8 | 1 | 16 | 0 | 16 | 0 | 1 | 0 | 3 | 0 | 5 | 0 | 8 | 0 | 12 | 0 | 14 | 1 | 6 | 1 | 10 | 1 | 12 | 0 | 10
+PIN | in<0> | 64 | 0 | N/A | 45 | 16 | 1 | 1 | 1 | 14 | 1 | 3 | 1 | 8 | 1 | 16 | 0 | 16 | 0 | 1 | 0 | 3 | 0 | 5 | 0 | 8 | 0 | 12 | 0 | 14 | 1 | 6 | 1 | 10 | 1 | 12 | 0 | 10
+PIN | out<0> | 536871040 | 0 | N/A | 5
+PIN | out<15> | 536871040 | 0 | N/A | 34
+PIN | out<10> | 536871040 | 0 | N/A | 4
+PIN | out<12> | 536871040 | 0 | N/A | 44
+PIN | out<1> | 536871040 | 0 | N/A | 32
+PIN | out<2> | 536871040 | 0 | N/A | 31
+PIN | out<3> | 536871040 | 0 | N/A | 8
+PIN | out<4> | 536871040 | 0 | N/A | 9
+PIN | out<5> | 536871040 | 0 | N/A | 13
+PIN | out<6> | 536871040 | 0 | N/A | 16
+PIN | out<8> | 536871040 | 0 | N/A | 23
+PIN | out<9> | 536871040 | 0 | N/A | 25
+PIN | out<11> | 536871040 | 0 | N/A | 46
+PIN | out<13> | 536871040 | 0 | N/A | 42
+PIN | out<14> | 536871040 | 0 | N/A | 37
+PIN | out<7> | 536871040 | 0 | N/A | 18

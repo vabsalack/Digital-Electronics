@@ -1,0 +1,7 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/Decoder_4x16.ise" -intstyle ise -ifn deocder_4x16.xst -ofn deocder_4x16.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/Decoder_4x16.ise" -intstyle ise -dd _ngo -i -p xa9500xl "deocder_4x16.ngc" deocder_4x16.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/Decoder_4x16.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper deocder_4x16.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/Decoder_4x16.ise" deocder_4x16_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/Decoder_4x16.ise" -intstyle ise deocder_4x16 deocder_4x16.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/Decoder_4x16.ise" -intstyle ise -f deocder_4x16 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/deocder_4x16_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/Decoder_4x16.ise" -s IEEE1149 -i deocder_4x16

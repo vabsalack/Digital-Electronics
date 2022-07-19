@@ -1,0 +1,37 @@
+ command line:
+   ./decoder_4x16_tb_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  63264
+
+Tue Jul 19 10:23:34 2022
+
+Total Line Count : 51
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 157.29 Meg. 
+
+ Total Signals          : 12
+ Total Nets             : 29
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 145
+ntrace select -o on -n /decoder_4x16_tb_v/out 
+ntrace select -o on -n /decoder_4x16_tb_v/en 
+ntrace select -o on -n /decoder_4x16_tb_v/in 
+ntrace select -o on -n /decoder_4x16_tb_v/i 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.046875 sec.
+
+ Estimate current memory usage : 165.29 Meg. 
+
+Tue Jul 19 10:24:07 2022
+

@@ -1,0 +1,10 @@
+V3 7
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/decoder_4x16_tb.v" 2022/07/19.10:23:32 J.36
+MO work/decoder_4x16_tb_v \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/decoder_4x16_tb.v" \
+      MI deocder_4x16
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/deocder_4x16.v" 2022/07/19.10:11:03 J.36
+MO work/deocder_4x16 \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Combinational_Logic/Decoder_4x16/deocder_4x16.v"
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v
