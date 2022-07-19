@@ -1,0 +1,21 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -ifn multiple_twobit_addition.xst -ofn multiple_twobit_addition.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -dd _ngo -i -p xa9500xl "multiple_twobit_addition.ngc" multiple_twobit_addition.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper multiple_twobit_addition.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" multiple_twobit_addition_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise multiple_twobit_addition multiple_twobit_addition.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -intstyle ise -f multiple_twobit_addition -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/multiple_twobit_addition_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/Generate_FOR_loop.ise" -s IEEE1149 -i multiple_twobit_addition

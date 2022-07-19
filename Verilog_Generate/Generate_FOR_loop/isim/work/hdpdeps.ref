@@ -1,0 +1,13 @@
+V3 9
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/multiple_twobit_addition.v" 2022/07/19.13:43:03 J.36
+MO work/half_adder \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/multiple_twobit_addition.v"
+MO work/multiple_twobit_addition \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/multiple_twobit_addition.v" \
+      MI half_adder
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/mutiple_twobit_addition_tb.v" 2022/07/19.13:50:44 J.36
+MO work/mutiple_twobit_addition_tb_v \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Verilog_Generate/Generate_FOR_loop/mutiple_twobit_addition_tb.v" \
+      MI multiple_twobit_addition
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

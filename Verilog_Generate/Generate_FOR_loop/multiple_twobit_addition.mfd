@@ -1,0 +1,78 @@
+MDF Database:  version 1.0
+MDF_INFO | multiple_twobit_addition | XA9536XL-15-VQ44
+MACROCELL | 0 | 11 | carry_0_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 2 | b<0>  | a<0>
+INPUTP | 2 | 1 | 44
+EQ | 1 | 
+   carry<0> = b<0> & a<0>;
+
+MACROCELL | 0 | 15 | carry_1_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 2 | b<1>  | a<1>
+INPUTP | 2 | 34 | 42
+EQ | 1 | 
+   carry<1> = b<1> & a<1>;
+
+MACROCELL | 1 | 11 | carry_2_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 2 | b<2>  | a<2>
+INPUTP | 2 | 6 | 47
+EQ | 1 | 
+   carry<2> = b<2> & a<2>;
+
+MACROCELL | 1 | 15 | carry_3_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 2 | b<3>  | a<3>
+INPUTP | 2 | 32 | 37
+EQ | 1 | 
+   carry<3> = b<3> & a<3>;
+
+MACROCELL | 0 | 1 | sum_0_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 2 | a<0>  | b<0>
+INPUTP | 2 | 44 | 1
+EQ | 2 | 
+   sum<0> = a<0>
+	$ b<0>;
+
+MACROCELL | 0 | 7 | sum_1_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 2 | a<1>  | b<1>
+INPUTP | 2 | 42 | 34
+EQ | 2 | 
+   sum<1> = a<1>
+	$ b<1>;
+
+MACROCELL | 1 | 1 | sum_2_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 2 | a<2>  | b<2>
+INPUTP | 2 | 47 | 6
+EQ | 2 | 
+   sum<2> = a<2>
+	$ b<2>;
+
+MACROCELL | 1 | 7 | sum_3_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 2 | a<3>  | b<3>
+INPUTP | 2 | 37 | 32
+EQ | 2 | 
+   sum<3> = a<3>
+	$ b<3>;
+
+PIN | b<0> | 64 | 0 | N/A | 1 | 2 | 0 | 11 | 0 | 1
+PIN | a<0> | 64 | 0 | N/A | 44 | 2 | 0 | 11 | 0 | 1
+PIN | b<1> | 64 | 0 | N/A | 34 | 2 | 0 | 15 | 0 | 7
+PIN | a<1> | 64 | 0 | N/A | 42 | 2 | 0 | 15 | 0 | 7
+PIN | b<2> | 64 | 0 | N/A | 6 | 2 | 1 | 11 | 1 | 1
+PIN | a<2> | 64 | 0 | N/A | 47 | 2 | 1 | 11 | 1 | 1
+PIN | b<3> | 64 | 0 | N/A | 32 | 2 | 1 | 15 | 1 | 7
+PIN | a<3> | 64 | 0 | N/A | 37 | 2 | 1 | 15 | 1 | 7
+PIN | carry<0> | 536871040 | 0 | N/A | 19
+PIN | carry<1> | 536871040 | 0 | N/A | 27
+PIN | carry<2> | 536871040 | 0 | N/A | 41
+PIN | carry<3> | 536871040 | 0 | N/A | 33
+PIN | sum<0> | 536871040 | 0 | N/A | 8
+PIN | sum<1> | 536871040 | 0 | N/A | 14
+PIN | sum<2> | 536871040 | 0 | N/A | 5
+PIN | sum<3> | 536871040 | 0 | N/A | 45
