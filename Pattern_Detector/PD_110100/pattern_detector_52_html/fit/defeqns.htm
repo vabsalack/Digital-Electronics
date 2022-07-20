@@ -1,0 +1,71 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$FX_DC$1 <= (current_state(1) AND current_state(2));
+</td></tr><tr><td>
+FDCPE_current_state0: FDCPE port map (current_state(0),next_state(0),clk,NOT rstn,'0');
+</td></tr><tr><td>
+FDCPE_current_state1: FDCPE port map (current_state(1),next_state(1),clk,NOT rstn,'0');
+</td></tr><tr><td>
+FDCPE_current_state2: FDCPE port map (current_state(2),next_state(2),clk,NOT rstn,'0');
+</td></tr><tr><td>
+FDCPE_next_state0: FDCPE port map (next_state(0),'0','0',next_state(0)/next_state(0)_RSTF,next_state(0)/next_state(0)_SETF);
+</td></tr><tr><td>
+</td></tr><tr><td>
+next_state(0)/next_state(0)_SETF <= ((NOT current_state(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	next_state(2)/next_state(2)_SETF)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x AND next_state(1)/next_state(1)_SETF)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT current_state(0) AND x AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT next_state(1)/next_state(1)_SETF AND NOT $OpTx$FX_DC$1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+next_state(0)/next_state(0)_RSTF <= ((NOT current_state(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT next_state(0)/next_state(0)_SETF)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT next_state(0)/next_state(0)_SETF AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT next_state(2)/next_state(2)_SETF AND NOT $OpTx$FX_DC$1));
+</td></tr><tr><td>
+FDCPE_next_state1: FDCPE port map (next_state(1),'0','0',next_state_CLR(1),next_state(1)/next_state(1)_SETF);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next_state_CLR(1) <= (NOT next_state(1)/next_state(1)_SETF AND NOT $OpTx$FX_DC$1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+next_state(1)/next_state(1)_SETF <= ((current_state(1) AND NOT current_state(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT current_state(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT current_state(1) AND current_state(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT current_state(0) AND x)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT current_state(1) AND NOT current_state(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	current_state(0) AND x));
+</td></tr><tr><td>
+</td></tr><tr><td>
+next_state(2)/next_state(2)_SETF <= ((current_state(1) AND NOT current_state(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	current_state(0) AND x)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT current_state(1) AND current_state(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT current_state(0) AND NOT x));
+</td></tr><tr><td>
+FDCPE_next_state2: FDCPE port map (next_state(2),'0','0',next_state_CLR(2),next_state(2)/next_state(2)_SETF);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next_state_CLR(2) <= (NOT next_state(2)/next_state(2)_SETF AND NOT $OpTx$FX_DC$1);
+</td></tr><tr><td>
+FDCPE_y: FDCPE port map (y,'0','0',NOT y_OBUF/y_OBUF_RSTF,y_PRE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y_PRE <= (NOT current_state(1) AND current_state(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	current_state(0) AND NOT x);
+</td></tr><tr><td>
+</td></tr><tr><td>
+y_OBUF/y_OBUF_RSTF <= ((current_state(1) AND current_state(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (current_state(2) AND current_state(0) AND NOT x));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

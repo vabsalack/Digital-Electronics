@@ -1,0 +1,79 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -ifn pattern_detector_52.xst -ofn pattern_detector_52.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -dd _ngo -i -p xa9500xl "pattern_detector_52.ngc" pattern_detector_52.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper pattern_detector_52.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" pattern_detector_52_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise pattern_detector_52 pattern_detector_52.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -intstyle ise -f pattern_detector_52 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/pattern_detector_52_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Pattern_Detector/PD_110100/PD_110100.ise" -s IEEE1149 -i pattern_detector_52

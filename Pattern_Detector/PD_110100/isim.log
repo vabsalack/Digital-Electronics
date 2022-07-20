@@ -1,0 +1,39 @@
+ command line:
+   ./pattern_detector_52_tb_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  65423
+
+Wed Jul 20 18:03:57 2022
+
+Total Line Count : 70
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 157.29 Meg. 
+
+ Total Signals          : 13
+ Total Nets             : 12
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 154
+ntrace select -o on -n /pattern_detector_52_tb_v/y 
+ntrace select -o on -n /pattern_detector_52_tb_v/clk 
+ntrace select -o on -n /pattern_detector_52_tb_v/rstn 
+ntrace select -o on -n /pattern_detector_52_tb_v/x 
+ntrace select -o on -n /pattern_detector_52_tb_v/tb_in 
+ntrace select -o on -n /pattern_detector_52_tb_v/i 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.015625 sec.
+
+ Estimate current memory usage : 162.931 Meg. 
+
+Wed Jul 20 18:06:28 2022
+

@@ -1,0 +1,152 @@
+MDF Database:  version 1.0
+MDF_INFO | pattern_detector_52 | XA9536XL-15-VQ44
+MACROCELL | 1 | 16 | current_state<1>
+ATTRIBUTES | 8561409 | 0
+OUTPUTMC | 6 | 0 | 1 | 0 | 16 | 0 | 11 | 0 | 14 | 0 | 9 | 0 | 10
+INPUTS | 1 | next_state<1>
+INPUTMC | 1 | 0 | 15
+EQ | 3 | 
+   current_state<1>.D = next_state<1>;
+   current_state<1>.CLK = clk;	// GCK
+   !current_state<1>.AR = rstn;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | rstn
+
+MACROCELL | 1 | 15 | current_state<2>
+ATTRIBUTES | 8561409 | 0
+OUTPUTMC | 6 | 0 | 1 | 0 | 11 | 0 | 14 | 0 | 9 | 0 | 12 | 0 | 10
+INPUTS | 1 | next_state<2>
+INPUTMC | 1 | 0 | 13
+EQ | 3 | 
+   current_state<2>.D = next_state<2>;
+   current_state<2>.CLK = clk;	// GCK
+   !current_state<2>.AR = rstn;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | rstn
+
+MACROCELL | 1 | 17 | current_state<0>
+ATTRIBUTES | 8561409 | 0
+OUTPUTMC | 5 | 0 | 1 | 0 | 16 | 0 | 11 | 0 | 14 | 0 | 10
+INPUTS | 1 | next_state<0>
+INPUTMC | 1 | 0 | 17
+EQ | 3 | 
+   current_state<0>.D = next_state<0>;
+   current_state<0>.CLK = clk;	// GCK
+   !current_state<0>.AR = rstn;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | rstn
+
+MACROCELL | 0 | 17 | next_state<0>
+ATTRIBUTES | 8520625 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 2 | next_state<0>/next_state<0>_SETF  | next_state<0>/next_state<0>_RSTF
+INPUTMC | 2 | 0 | 16 | 0 | 12
+EQ | 4 | 
+   next_state<0>.D = Gnd;
+   next_state<0>.CLK = Gnd;
+   next_state<0>.AP = next_state<0>/next_state<0>_SETF;
+   next_state<0>.AR = next_state<0>/next_state<0>_RSTF;
+
+MACROCELL | 0 | 15 | next_state<1>
+ATTRIBUTES | 8520625 | 0
+OUTPUTMC | 1 | 1 | 16
+INPUTS | 2 | next_state<1>/next_state<1>_SETF  | $OpTx$FX_DC$1
+INPUTMC | 2 | 0 | 14 | 0 | 9
+EQ | 4 | 
+   next_state<1>.D = Gnd;
+   next_state<1>.CLK = Gnd;
+   next_state<1>.AP = next_state<1>/next_state<1>_SETF;
+   next_state<1>.AR = !next_state<1>/next_state<1>_SETF & !$OpTx$FX_DC$1;
+
+MACROCELL | 0 | 13 | next_state<2>
+ATTRIBUTES | 8520625 | 0
+OUTPUTMC | 1 | 1 | 15
+INPUTS | 2 | next_state<2>/next_state<2>_SETF  | $OpTx$FX_DC$1
+INPUTMC | 2 | 0 | 11 | 0 | 9
+EQ | 4 | 
+   next_state<2>.D = Gnd;
+   next_state<2>.CLK = Gnd;
+   next_state<2>.AP = next_state<2>/next_state<2>_SETF;
+   next_state<2>.AR = !next_state<2>/next_state<2>_SETF & !$OpTx$FX_DC$1;
+
+MACROCELL | 0 | 1 | y_OBUF
+ATTRIBUTES | 8651699 | 0
+INPUTS | 5 | current_state<1>  | current_state<2>  | current_state<0>  | x  | y_OBUF/y_OBUF_RSTF
+INPUTMC | 4 | 1 | 16 | 1 | 15 | 1 | 17 | 0 | 10
+INPUTP | 1 | 45
+EQ | 5 | 
+   y.D = Gnd;
+   y.CLK = Gnd;
+   y.AP = !current_state<1> & current_state<2> & 
+	current_state<0> & !x;
+   y.AR = !y_OBUF/y_OBUF_RSTF;
+
+MACROCELL | 0 | 16 | next_state<0>/next_state<0>_SETF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 2 | 0 | 17 | 0 | 12
+INPUTS | 6 | current_state<1>  | next_state<2>/next_state<2>_SETF  | x  | next_state<1>/next_state<1>_SETF  | current_state<0>  | $OpTx$FX_DC$1
+INPUTMC | 5 | 1 | 16 | 0 | 11 | 0 | 14 | 1 | 17 | 0 | 9
+INPUTP | 1 | 45
+EQ | 5 | 
+   next_state<0>/next_state<0>_SETF = !current_state<1> & 
+	next_state<2>/next_state<2>_SETF
+	# !x & next_state<1>/next_state<1>_SETF
+	# !current_state<0> & x & 
+	!next_state<1>/next_state<1>_SETF & !$OpTx$FX_DC$1;
+
+MACROCELL | 0 | 11 | next_state<2>/next_state<2>_SETF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 0 | 13 | 0 | 16 | 0 | 12
+INPUTS | 4 | current_state<1>  | current_state<2>  | current_state<0>  | x
+INPUTMC | 3 | 1 | 16 | 1 | 15 | 1 | 17
+INPUTP | 1 | 45
+EQ | 4 | 
+   next_state<2>/next_state<2>_SETF = current_state<1> & !current_state<2> & 
+	current_state<0> & x
+	# !current_state<1> & current_state<2> & 
+	!current_state<0> & !x;
+
+MACROCELL | 0 | 14 | next_state<1>/next_state<1>_SETF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 2 | 0 | 15 | 0 | 16
+INPUTS | 4 | current_state<1>  | current_state<2>  | current_state<0>  | x
+INPUTMC | 3 | 1 | 16 | 1 | 15 | 1 | 17
+INPUTP | 1 | 45
+EQ | 6 | 
+   next_state<1>/next_state<1>_SETF = current_state<1> & !current_state<2> & 
+	!current_state<0>
+	# !current_state<1> & current_state<2> & 
+	!current_state<0> & x
+	# !current_state<1> & !current_state<2> & 
+	current_state<0> & x;
+
+MACROCELL | 0 | 9 | $OpTx$FX_DC$1
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 4 | 0 | 15 | 0 | 13 | 0 | 16 | 0 | 12
+INPUTS | 2 | current_state<1>  | current_state<2>
+INPUTMC | 2 | 1 | 16 | 1 | 15
+EQ | 1 | 
+   $OpTx$FX_DC$1 = current_state<1> & current_state<2>;
+
+MACROCELL | 0 | 12 | next_state<0>/next_state<0>_RSTF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 17
+INPUTS | 4 | current_state<2>  | next_state<0>/next_state<0>_SETF  | next_state<2>/next_state<2>_SETF  | $OpTx$FX_DC$1
+INPUTMC | 4 | 1 | 15 | 0 | 16 | 0 | 11 | 0 | 9
+EQ | 4 | 
+   next_state<0>/next_state<0>_RSTF = !current_state<2> & 
+	!next_state<0>/next_state<0>_SETF
+	# !next_state<0>/next_state<0>_SETF & 
+	!next_state<2>/next_state<2>_SETF & !$OpTx$FX_DC$1;
+
+MACROCELL | 0 | 10 | y_OBUF/y_OBUF_RSTF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 4 | current_state<1>  | current_state<2>  | current_state<0>  | x
+INPUTMC | 3 | 1 | 16 | 1 | 15 | 1 | 17
+INPUTP | 1 | 45
+EQ | 2 | 
+   y_OBUF/y_OBUF_RSTF = current_state<1> & current_state<2>
+	# current_state<2> & current_state<0> & !x;
+
+PIN | clk | 4096 | 0 | N/A | 10 | 3 | 1 | 16 | 1 | 15 | 1 | 17
+PIN | rstn | 65536 | 0 | N/A | 47 | 3 | 1 | 16 | 1 | 15 | 1 | 17
+PIN | x | 64 | 0 | N/A | 45 | 5 | 0 | 1 | 0 | 16 | 0 | 11 | 0 | 14 | 0 | 10
+PIN | y | 536871040 | 0 | N/A | 8

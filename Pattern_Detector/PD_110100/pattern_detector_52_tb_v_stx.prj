@@ -1,0 +1,3 @@
+verilog isim_temp "pattern_detector_52.v"
+verilog isim_temp "pattern_detector_52_tb.v"
+verilog isim_temp "C:/Xilinx92i/verilog/src/glbl.v"

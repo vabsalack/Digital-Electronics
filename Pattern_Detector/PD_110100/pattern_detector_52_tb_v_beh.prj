@@ -1,0 +1,3 @@
+verilog work "pattern_detector_52.v"
+verilog work "pattern_detector_52_tb.v"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

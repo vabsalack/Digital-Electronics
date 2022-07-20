@@ -1,0 +1,558 @@
+NDS Database:  version J.36
+
+NDS_INFO | xa9500xl | A9536XL44VQ | XA9536XL-15-VQ44
+
+DEVICE | A9536XL | A9536XL44VQ | 
+
+NETWORK | pattern_detector_52 | 0 | 0 | 16793607
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | pattern_detector_52_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 1057 | PI | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1040 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | rstn_IBUF | pattern_detector_52_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | rstn | 1058 | PI | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 9 | 5 | II_FSRINV
+NODE | FSR-IO_1 | 1041 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | current_state<1> | pattern_detector_52_COPY_0_COPY_0 | 2155873281 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<1> | 1046 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<1>.Q | next_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1040 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_1 | 1041 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | current_state<1>.SI | current_state<1> | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<1> | 1046 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<1>.Q | next_state<1> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | current_state<1>.D1 | 1061 | ? | 0 | 4096 | current_state<1> | NULL | NULL | current_state<1>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | current_state<1>.D2 | 1062 | ? | 0 | 4096 | current_state<1> | NULL | NULL | current_state<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | next_state<1>
+
+SRFF_INSTANCE | current_state<1>.REG | current_state<1> | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | current_state<1>.D | 1060 | ? | 0 | 0 | current_state<1> | NULL | NULL | current_state<1>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 1040 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSR-IO_1 | 1041 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | current_state<1>.Q | 1063 | ? | 0 | 0 | current_state<1> | NULL | NULL | current_state<1>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | current_state<2> | pattern_detector_52_COPY_0_COPY_0 | 2155873281 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<2> | 1047 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>.Q | next_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1040 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_1 | 1041 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | current_state<2>.SI | current_state<2> | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<2> | 1047 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>.Q | next_state<2> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | current_state<2>.D1 | 1065 | ? | 0 | 4096 | current_state<2> | NULL | NULL | current_state<2>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | current_state<2>.D2 | 1066 | ? | 0 | 4096 | current_state<2> | NULL | NULL | current_state<2>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | next_state<2>
+
+SRFF_INSTANCE | current_state<2>.REG | current_state<2> | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | current_state<2>.D | 1064 | ? | 0 | 0 | current_state<2> | NULL | NULL | current_state<2>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 1040 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSR-IO_1 | 1041 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | current_state<2>.Q | 1067 | ? | 0 | 0 | current_state<2> | NULL | NULL | current_state<2>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | current_state<0> | pattern_detector_52_COPY_0_COPY_0 | 2155873281 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<0> | 1045 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>.Q | next_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1040 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_1 | 1041 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | current_state<0>.SI | current_state<0> | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<0> | 1045 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>.Q | next_state<0> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | current_state<0>.D1 | 1069 | ? | 0 | 4096 | current_state<0> | NULL | NULL | current_state<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | current_state<0>.D2 | 1070 | ? | 0 | 4096 | current_state<0> | NULL | NULL | current_state<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | next_state<0>
+
+SRFF_INSTANCE | current_state<0>.REG | current_state<0> | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | current_state<0>.D | 1068 | ? | 0 | 0 | current_state<0> | NULL | NULL | current_state<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 1040 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSR-IO_1 | 1041 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | current_state<0>.Q | 1071 | ? | 0 | 0 | current_state<0> | NULL | NULL | current_state<0>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | next_state<0> | pattern_detector_52_COPY_0_COPY_0 | 2155873281 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<0>/next_state<0>_SETF.UIM | 1051 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>/next_state<0>_SETF.Q | next_state<0>/next_state<0>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<0>/next_state<0>_RSTF.UIM | 1055 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>/next_state<0>_RSTF.Q | next_state<0>/next_state<0>_RSTF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_state<0> | 1045 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>.Q | next_state<0> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_state<0>.SI | next_state<0> | 0 | 2 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<0>/next_state<0>_SETF.UIM | 1051 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>/next_state<0>_SETF.Q | next_state<0>/next_state<0>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<0>/next_state<0>_RSTF.UIM | 1055 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>/next_state<0>_RSTF.Q | next_state<0>/next_state<0>_RSTF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_state<0>.D1 | 1073 | ? | 0 | 4096 | next_state<0> | NULL | NULL | next_state<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_state<0>.D2 | 1074 | ? | 0 | 6144 | next_state<0> | NULL | NULL | next_state<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | next_state<0>.CLKF | 1075 | ? | 0 | 6144 | next_state<0> | NULL | NULL | next_state<0>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | next_state<0>.SETF | 1076 | ? | 0 | 4096 | next_state<0> | NULL | NULL | next_state<0>.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 1 | IV_TRUE | next_state<0>/next_state<0>_SETF.UIM
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | next_state<0>.RSTF | 1077 | ? | 0 | 4096 | next_state<0> | NULL | NULL | next_state<0>.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 1 | IV_TRUE | next_state<0>/next_state<0>_RSTF.UIM
+
+SRFF_INSTANCE | next_state<0>.REG | next_state<0> | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_state<0>.D | 1072 | ? | 0 | 0 | next_state<0> | NULL | NULL | next_state<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | next_state<0>.CLKF | 1075 | ? | 0 | 6144 | next_state<0> | NULL | NULL | next_state<0>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | next_state<0>.SETF | 1076 | ? | 0 | 4096 | next_state<0> | NULL | NULL | next_state<0>.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 1 | IV_TRUE | next_state<0>/next_state<0>_SETF.UIM
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | next_state<0>.RSTF | 1077 | ? | 0 | 4096 | next_state<0> | NULL | NULL | next_state<0>.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 1 | IV_TRUE | next_state<0>/next_state<0>_RSTF.UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_state<0>.Q | 1078 | ? | 0 | 0 | next_state<0> | NULL | NULL | next_state<0>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | next_state<1> | pattern_detector_52_COPY_0_COPY_0 | 2155873281 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<1>/next_state<1>_SETF.UIM | 1053 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<1>/next_state<1>_SETF.Q | next_state<1>/next_state<1>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_state<1> | 1046 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<1>.Q | next_state<1> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_state<1>.SI | next_state<1> | 0 | 2 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<1>/next_state<1>_SETF.UIM | 1053 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<1>/next_state<1>_SETF.Q | next_state<1>/next_state<1>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_state<1>.D1 | 1080 | ? | 0 | 4096 | next_state<1> | NULL | NULL | next_state<1>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_state<1>.D2 | 1081 | ? | 0 | 6144 | next_state<1> | NULL | NULL | next_state<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | next_state<1>.CLKF | 1082 | ? | 0 | 6144 | next_state<1> | NULL | NULL | next_state<1>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | next_state<1>.SETF | 1083 | ? | 0 | 4096 | next_state<1> | NULL | NULL | next_state<1>.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 1 | IV_TRUE | next_state<1>/next_state<1>_SETF.UIM
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | next_state<1>.RSTF | 1084 | ? | 0 | 4096 | next_state<1> | NULL | NULL | next_state<1>.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_FALSE | next_state<1>/next_state<1>_SETF.UIM | IV_FALSE | $OpTx$FX_DC$1.UIM
+
+SRFF_INSTANCE | next_state<1>.REG | next_state<1> | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_state<1>.D | 1079 | ? | 0 | 0 | next_state<1> | NULL | NULL | next_state<1>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | next_state<1>.CLKF | 1082 | ? | 0 | 6144 | next_state<1> | NULL | NULL | next_state<1>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | next_state<1>.SETF | 1083 | ? | 0 | 4096 | next_state<1> | NULL | NULL | next_state<1>.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 1 | IV_TRUE | next_state<1>/next_state<1>_SETF.UIM
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | next_state<1>.RSTF | 1084 | ? | 0 | 4096 | next_state<1> | NULL | NULL | next_state<1>.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_FALSE | next_state<1>/next_state<1>_SETF.UIM | IV_FALSE | $OpTx$FX_DC$1.UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_state<1>.Q | 1085 | ? | 0 | 0 | next_state<1> | NULL | NULL | next_state<1>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | next_state<2> | pattern_detector_52_COPY_0_COPY_0 | 2155873281 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<2>/next_state<2>_SETF.UIM | 1052 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>/next_state<2>_SETF.Q | next_state<2>/next_state<2>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_state<2> | 1047 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>.Q | next_state<2> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_state<2>.SI | next_state<2> | 0 | 2 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<2>/next_state<2>_SETF.UIM | 1052 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>/next_state<2>_SETF.Q | next_state<2>/next_state<2>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_state<2>.D1 | 1087 | ? | 0 | 4096 | next_state<2> | NULL | NULL | next_state<2>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_state<2>.D2 | 1088 | ? | 0 | 6144 | next_state<2> | NULL | NULL | next_state<2>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | next_state<2>.CLKF | 1089 | ? | 0 | 6144 | next_state<2> | NULL | NULL | next_state<2>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | next_state<2>.SETF | 1090 | ? | 0 | 4096 | next_state<2> | NULL | NULL | next_state<2>.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 1 | IV_TRUE | next_state<2>/next_state<2>_SETF.UIM
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | next_state<2>.RSTF | 1091 | ? | 0 | 4096 | next_state<2> | NULL | NULL | next_state<2>.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_FALSE | next_state<2>/next_state<2>_SETF.UIM | IV_FALSE | $OpTx$FX_DC$1.UIM
+
+SRFF_INSTANCE | next_state<2>.REG | next_state<2> | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_state<2>.D | 1086 | ? | 0 | 0 | next_state<2> | NULL | NULL | next_state<2>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | next_state<2>.CLKF | 1089 | ? | 0 | 6144 | next_state<2> | NULL | NULL | next_state<2>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | next_state<2>.SETF | 1090 | ? | 0 | 4096 | next_state<2> | NULL | NULL | next_state<2>.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 1 | IV_TRUE | next_state<2>/next_state<2>_SETF.UIM
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | next_state<2>.RSTF | 1091 | ? | 0 | 4096 | next_state<2> | NULL | NULL | next_state<2>.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_FALSE | next_state<2>/next_state<2>_SETF.UIM | IV_FALSE | $OpTx$FX_DC$1.UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_state<2>.Q | 1092 | ? | 0 | 0 | next_state<2> | NULL | NULL | next_state<2>.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | x_IBUF | pattern_detector_52_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | x | 1059 | PI | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | y_OBUF | pattern_detector_52_COPY_0_COPY_0 | 2155873281 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | y_OBUF/y_OBUF_RSTF.UIM | 1056 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | y_OBUF/y_OBUF_RSTF.Q | y_OBUF/y_OBUF_RSTF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | y_OBUF | 1049 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | y_OBUF.Q | y_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | y_OBUF.SI | y_OBUF | 0 | 5 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | y_OBUF/y_OBUF_RSTF.UIM | 1056 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | y_OBUF/y_OBUF_RSTF.Q | y_OBUF/y_OBUF_RSTF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | y_OBUF.D1 | 1094 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | y_OBUF.D2 | 1095 | ? | 0 | 6144 | y_OBUF | NULL | NULL | y_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | y_OBUF.CLKF | 1096 | ? | 0 | 6144 | y_OBUF | NULL | NULL | y_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | y_OBUF.SETF | 1097 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | current_state<1> | IV_TRUE | current_state<2> | IV_TRUE | current_state<0> | IV_FALSE | x_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | y_OBUF.RSTF | 1098 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 1 | IV_FALSE | y_OBUF/y_OBUF_RSTF.UIM
+
+SRFF_INSTANCE | y_OBUF.REG | y_OBUF | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | y_OBUF.D | 1093 | ? | 0 | 0 | y_OBUF | NULL | NULL | y_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | y_OBUF.CLKF | 1096 | ? | 0 | 6144 | y_OBUF | NULL | NULL | y_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | y_OBUF.SETF | 1097 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | current_state<1> | IV_TRUE | current_state<2> | IV_TRUE | current_state<0> | IV_FALSE | x_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | y_OBUF.RSTF | 1098 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 1 | IV_FALSE | y_OBUF/y_OBUF_RSTF.UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | y_OBUF.Q | 1099 | ? | 0 | 0 | y_OBUF | NULL | NULL | y_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | y | pattern_detector_52_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | y_OBUF | 1049 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | y_OBUF.Q | y_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | y | 1050 | PO | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | y | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | next_state<0>/next_state<0>_SETF | pattern_detector_52_COPY_0_COPY_0 | 2181038081 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<2>/next_state<2>_SETF.UIM | 1052 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>/next_state<2>_SETF.Q | next_state<2>/next_state<2>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<1>/next_state<1>_SETF.UIM | 1053 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<1>/next_state<1>_SETF.Q | next_state<1>/next_state<1>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_state<0>/next_state<0>_SETF.UIM | 1051 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>/next_state<0>_SETF.Q | next_state<0>/next_state<0>_SETF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_state<0>/next_state<0>_SETF.SI | next_state<0>/next_state<0>_SETF | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<2>/next_state<2>_SETF.UIM | 1052 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>/next_state<2>_SETF.Q | next_state<2>/next_state<2>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<1>/next_state<1>_SETF.UIM | 1053 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<1>/next_state<1>_SETF.Q | next_state<1>/next_state<1>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_state<0>/next_state<0>_SETF.D1 | 1101 | ? | 0 | 4096 | next_state<0>/next_state<0>_SETF | NULL | NULL | next_state<0>/next_state<0>_SETF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_state<0>/next_state<0>_SETF.D2 | 1102 | ? | 0 | 4096 | next_state<0>/next_state<0>_SETF | NULL | NULL | next_state<0>/next_state<0>_SETF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | current_state<1> | IV_TRUE | next_state<2>/next_state<2>_SETF.UIM
+SPPTERM | 2 | IV_FALSE | x_IBUF | IV_TRUE | next_state<1>/next_state<1>_SETF.UIM
+SPPTERM | 4 | IV_FALSE | current_state<0> | IV_TRUE | x_IBUF | IV_FALSE | next_state<1>/next_state<1>_SETF.UIM | IV_FALSE | $OpTx$FX_DC$1.UIM
+
+SRFF_INSTANCE | next_state<0>/next_state<0>_SETF.REG | next_state<0>/next_state<0>_SETF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_state<0>/next_state<0>_SETF.D | 1100 | ? | 0 | 0 | next_state<0>/next_state<0>_SETF | NULL | NULL | next_state<0>/next_state<0>_SETF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_state<0>/next_state<0>_SETF.Q | 1103 | ? | 0 | 0 | next_state<0>/next_state<0>_SETF | NULL | NULL | next_state<0>/next_state<0>_SETF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | next_state<2>/next_state<2>_SETF | pattern_detector_52_COPY_0_COPY_0 | 2181038081 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_state<2>/next_state<2>_SETF.UIM | 1052 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>/next_state<2>_SETF.Q | next_state<2>/next_state<2>_SETF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_state<2>/next_state<2>_SETF.SI | next_state<2>/next_state<2>_SETF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_state<2>/next_state<2>_SETF.D1 | 1105 | ? | 0 | 4096 | next_state<2>/next_state<2>_SETF | NULL | NULL | next_state<2>/next_state<2>_SETF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_state<2>/next_state<2>_SETF.D2 | 1106 | ? | 0 | 4096 | next_state<2>/next_state<2>_SETF | NULL | NULL | next_state<2>/next_state<2>_SETF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | current_state<1> | IV_FALSE | current_state<2> | IV_TRUE | current_state<0> | IV_TRUE | x_IBUF
+SPPTERM | 4 | IV_FALSE | current_state<1> | IV_TRUE | current_state<2> | IV_FALSE | current_state<0> | IV_FALSE | x_IBUF
+
+SRFF_INSTANCE | next_state<2>/next_state<2>_SETF.REG | next_state<2>/next_state<2>_SETF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_state<2>/next_state<2>_SETF.D | 1104 | ? | 0 | 0 | next_state<2>/next_state<2>_SETF | NULL | NULL | next_state<2>/next_state<2>_SETF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_state<2>/next_state<2>_SETF.Q | 1107 | ? | 0 | 0 | next_state<2>/next_state<2>_SETF | NULL | NULL | next_state<2>/next_state<2>_SETF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | next_state<1>/next_state<1>_SETF | pattern_detector_52_COPY_0_COPY_0 | 2181038081 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_state<1>/next_state<1>_SETF.UIM | 1053 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<1>/next_state<1>_SETF.Q | next_state<1>/next_state<1>_SETF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_state<1>/next_state<1>_SETF.SI | next_state<1>/next_state<1>_SETF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_state<1>/next_state<1>_SETF.D1 | 1109 | ? | 0 | 4096 | next_state<1>/next_state<1>_SETF | NULL | NULL | next_state<1>/next_state<1>_SETF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_state<1>/next_state<1>_SETF.D2 | 1110 | ? | 0 | 4096 | next_state<1>/next_state<1>_SETF | NULL | NULL | next_state<1>/next_state<1>_SETF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | current_state<1> | IV_FALSE | current_state<2> | IV_FALSE | current_state<0>
+SPPTERM | 4 | IV_FALSE | current_state<1> | IV_TRUE | current_state<2> | IV_FALSE | current_state<0> | IV_TRUE | x_IBUF
+SPPTERM | 4 | IV_FALSE | current_state<1> | IV_FALSE | current_state<2> | IV_TRUE | current_state<0> | IV_TRUE | x_IBUF
+
+SRFF_INSTANCE | next_state<1>/next_state<1>_SETF.REG | next_state<1>/next_state<1>_SETF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_state<1>/next_state<1>_SETF.D | 1108 | ? | 0 | 0 | next_state<1>/next_state<1>_SETF | NULL | NULL | next_state<1>/next_state<1>_SETF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_state<1>/next_state<1>_SETF.Q | 1111 | ? | 0 | 0 | next_state<1>/next_state<1>_SETF | NULL | NULL | next_state<1>/next_state<1>_SETF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | $OpTx$FX_DC$1 | pattern_detector_52_COPY_0_COPY_0 | 2181038081 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | $OpTx$FX_DC$1.SI | $OpTx$FX_DC$1 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | $OpTx$FX_DC$1.D1 | 1113 | ? | 0 | 4096 | $OpTx$FX_DC$1 | NULL | NULL | $OpTx$FX_DC$1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | $OpTx$FX_DC$1.D2 | 1114 | ? | 0 | 4096 | $OpTx$FX_DC$1 | NULL | NULL | $OpTx$FX_DC$1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | current_state<1> | IV_TRUE | current_state<2>
+
+SRFF_INSTANCE | $OpTx$FX_DC$1.REG | $OpTx$FX_DC$1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | $OpTx$FX_DC$1.D | 1112 | ? | 0 | 0 | $OpTx$FX_DC$1 | NULL | NULL | $OpTx$FX_DC$1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | $OpTx$FX_DC$1.Q | 1115 | ? | 0 | 0 | $OpTx$FX_DC$1 | NULL | NULL | $OpTx$FX_DC$1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | next_state<0>/next_state<0>_RSTF | pattern_detector_52_COPY_0_COPY_0 | 2181038081 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<0>/next_state<0>_SETF.UIM | 1051 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>/next_state<0>_SETF.Q | next_state<0>/next_state<0>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<2>/next_state<2>_SETF.UIM | 1052 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>/next_state<2>_SETF.Q | next_state<2>/next_state<2>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_state<0>/next_state<0>_RSTF.UIM | 1055 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>/next_state<0>_RSTF.Q | next_state<0>/next_state<0>_RSTF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_state<0>/next_state<0>_RSTF.SI | next_state<0>/next_state<0>_RSTF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<0>/next_state<0>_SETF.UIM | 1051 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<0>/next_state<0>_SETF.Q | next_state<0>/next_state<0>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_state<2>/next_state<2>_SETF.UIM | 1052 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | next_state<2>/next_state<2>_SETF.Q | next_state<2>/next_state<2>_SETF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$FX_DC$1.UIM | 1054 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | $OpTx$FX_DC$1.Q | $OpTx$FX_DC$1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_state<0>/next_state<0>_RSTF.D1 | 1117 | ? | 0 | 4096 | next_state<0>/next_state<0>_RSTF | NULL | NULL | next_state<0>/next_state<0>_RSTF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_state<0>/next_state<0>_RSTF.D2 | 1118 | ? | 0 | 4096 | next_state<0>/next_state<0>_RSTF | NULL | NULL | next_state<0>/next_state<0>_RSTF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | current_state<2> | IV_FALSE | next_state<0>/next_state<0>_SETF.UIM
+SPPTERM | 3 | IV_FALSE | next_state<0>/next_state<0>_SETF.UIM | IV_FALSE | next_state<2>/next_state<2>_SETF.UIM | IV_FALSE | $OpTx$FX_DC$1.UIM
+
+SRFF_INSTANCE | next_state<0>/next_state<0>_RSTF.REG | next_state<0>/next_state<0>_RSTF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_state<0>/next_state<0>_RSTF.D | 1116 | ? | 0 | 0 | next_state<0>/next_state<0>_RSTF | NULL | NULL | next_state<0>/next_state<0>_RSTF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_state<0>/next_state<0>_RSTF.Q | 1119 | ? | 0 | 0 | next_state<0>/next_state<0>_RSTF | NULL | NULL | next_state<0>/next_state<0>_RSTF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | y_OBUF/y_OBUF_RSTF | pattern_detector_52_COPY_0_COPY_0 | 2181038081 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | y_OBUF/y_OBUF_RSTF.UIM | 1056 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | y_OBUF/y_OBUF_RSTF.Q | y_OBUF/y_OBUF_RSTF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | y_OBUF/y_OBUF_RSTF.SI | y_OBUF/y_OBUF_RSTF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<1> | 1042 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<1>.Q | current_state<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<2> | 1043 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<2>.Q | current_state<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state<0> | 1044 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | current_state<0>.Q | current_state<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 1048 | ? | 0 | 0 | pattern_detector_52_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | y_OBUF/y_OBUF_RSTF.D1 | 1121 | ? | 0 | 4096 | y_OBUF/y_OBUF_RSTF | NULL | NULL | y_OBUF/y_OBUF_RSTF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | y_OBUF/y_OBUF_RSTF.D2 | 1122 | ? | 0 | 4096 | y_OBUF/y_OBUF_RSTF | NULL | NULL | y_OBUF/y_OBUF_RSTF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | current_state<1> | IV_TRUE | current_state<2>
+SPPTERM | 3 | IV_TRUE | current_state<2> | IV_TRUE | current_state<0> | IV_FALSE | x_IBUF
+
+SRFF_INSTANCE | y_OBUF/y_OBUF_RSTF.REG | y_OBUF/y_OBUF_RSTF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | y_OBUF/y_OBUF_RSTF.D | 1120 | ? | 0 | 0 | y_OBUF/y_OBUF_RSTF | NULL | NULL | y_OBUF/y_OBUF_RSTF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | y_OBUF/y_OBUF_RSTF.Q | 1123 | ? | 0 | 0 | y_OBUF/y_OBUF_RSTF | NULL | NULL | y_OBUF/y_OBUF_RSTF.REG | 0 | 8 | SRFF_Q
+
+FB_INSTANCE | FOOBAR1_ | pattern_detector_52_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | y_OBUF | 1 | NULL | 0 | y | 1 | 41 | 49152
+FBPIN | 3 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 43 | 57344
+FBPIN | 10 | $OpTx$FX_DC$1 | 1 | NULL | 0 | NULL | 0 | 6 | 49152
+FBPIN | 11 | y_OBUF/y_OBUF_RSTF | 1 | NULL | 0 | NULL | 0 | 7 | 49152
+FBPIN | 12 | next_state<2>/next_state<2>_SETF | 1 | NULL | 0 | NULL | 0 | 8 | 49152
+FBPIN | 13 | next_state<0>/next_state<0>_RSTF | 1 | NULL | 0 | NULL | 0 | 12 | 49152
+FBPIN | 14 | next_state<2> | 1 | NULL | 0 | NULL | 0 | 13 | 49152
+FBPIN | 15 | next_state<1>/next_state<1>_SETF | 1 | NULL | 0 | NULL | 0 | 14 | 49152
+FBPIN | 16 | next_state<1> | 1 | NULL | 0 | NULL | 0 | 16 | 49152
+FBPIN | 17 | next_state<0>/next_state<0>_SETF | 1 | NULL | 0 | NULL | 0 | 18 | 49152
+FBPIN | 18 | next_state<0> | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | pattern_detector_52_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | NULL | 0 | rstn_IBUF | 1 | NULL | 0 | 33 | 51200
+FBPIN | 8 | NULL | 0 | x_IBUF | 1 | NULL | 0 | 31 | 49152
+FBPIN | 16 | current_state<2> | 1 | NULL | 0 | NULL | 0 | 20 | 49152
+FBPIN | 17 | current_state<1> | 1 | NULL | 0 | NULL | 0 | 19 | 49152
+FBPIN | 18 | current_state<0> | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | pattern_detector_52_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 2 | x | 31 | 9 | $OpTx$FX_DC$1.UIM | NULL | 11 | next_state<2>/next_state<2>_SETF.UIM | NULL | 12 | next_state<0>/next_state<0>_RSTF.UIM | NULL | 15 | current_state<2> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 17 | current_state<0> | NULL | 25 | y_OBUF/y_OBUF_RSTF.UIM | NULL | 26 | current_state<1> | NULL | 31 | next_state<0>/next_state<0>_SETF.UIM | NULL | 50 | next_state<1>/next_state<1>_SETF.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | 38 | -1 | -1 | -1 | -1 | -1 | -1 | 9 | -1 | 11 | 12 | -1 | -1 | 33 | -1 | 35 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 10 | 34 | -1 | -1 | -1 | -1 | 16 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 14 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 13 | next_state<2> | NULL | 15 | next_state<1> | NULL | 17 | next_state<0> | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 13 | -1 | 15 | -1 | 17 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk | 0 | 0
+
+GLOBAL_FSR | rstn | 0 | 0
