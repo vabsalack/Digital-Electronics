@@ -1,0 +1,28 @@
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -ifn SeqDect_1001.xst -ofn SeqDect_1001.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -dd _ngo -i -p xa9500xl "SeqDect_1001.ngc" SeqDect_1001.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper SeqDect_1001.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" SeqDect_1001_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise SeqDect_1001 SeqDect_1001.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -f SeqDect_1001 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SeqDect_1001_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -s IEEE1149 -i SeqDect_1001
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -ifn SeqDect_1001.xst -ofn SeqDect_1001.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -dd _ngo -i -p xa9500xl "SeqDect_1001.ngc" SeqDect_1001.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper SeqDect_1001.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" SeqDect_1001_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise SeqDect_1001 SeqDect_1001.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -f SeqDect_1001 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SeqDect_1001_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -s IEEE1149 -i SeqDect_1001
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -ifn SeqDect_1001.xst -ofn SeqDect_1001.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -dd _ngo -i -p xa9500xl "SeqDect_1001.ngc" SeqDect_1001.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper SeqDect_1001.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" SeqDect_1001_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise SeqDect_1001 SeqDect_1001.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -f SeqDect_1001 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SeqDect_1001_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -s IEEE1149 -i SeqDect_1001
+xst -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -ifn SeqDect_1001.xst -ofn SeqDect_1001.syr
+ngdbuild -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -dd _ngo -i -p xa9500xl "SeqDect_1001.ngc" SeqDect_1001.ngd
+cpldfit -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper SeqDect_1001.ngd
+XSLTProcess -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" SeqDect_1001_build.xml
+tsim -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise SeqDect_1001 SeqDect_1001.nga
+taengine -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -intstyle ise -f SeqDect_1001 -w --format html1 -l C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SeqDect_1001_html/tim/timing_report.htm
+hprep6 -ise "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SD_1001.ise" -s IEEE1149 -i SeqDect_1001

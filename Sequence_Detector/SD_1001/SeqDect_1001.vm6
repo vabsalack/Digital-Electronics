@@ -1,0 +1,156 @@
+NDS Database:  version J.36
+
+NDS_INFO | xa9500xl | A9536XL44VQ | XA9536XL-15-VQ44
+
+DEVICE | A9536XL | A9536XL44VQ | 
+
+NETWORK | SeqDect_1001 | 0 | 0 | 16793607
+
+INPUT_INSTANCE | 0 | 0 | NULL | x_IBUF | SeqDect_1001_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | x | 180 | PI | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | x_IBUF | 173 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | SeqDect_1001_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 181 | PI | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 174 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | rstn_IBUF | SeqDect_1001_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | rstn | 182 | PI | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 9 | 5 | II_FSRINV
+NODE | FSR-IO_1 | 175 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | current_state_FFd2 | SeqDect_1001_COPY_0_COPY_0 | 2155873281 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd2 | 176 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd2.Q | current_state_FFd2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd1 | 177 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd1.Q | current_state_FFd1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 173 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 174 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_1 | 175 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | current_state_FFd2 | 176 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd2.Q | current_state_FFd2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | current_state_FFd2.SI | current_state_FFd2 | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd2 | 176 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd2.Q | current_state_FFd2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd1 | 177 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd1.Q | current_state_FFd1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 173 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | current_state_FFd2.D1 | 184 | ? | 0 | 4096 | current_state_FFd2 | NULL | NULL | current_state_FFd2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | current_state_FFd2.D2 | 185 | ? | 0 | 4096 | current_state_FFd2 | NULL | NULL | current_state_FFd2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | x_IBUF
+SPPTERM | 2 | IV_TRUE | current_state_FFd2 | IV_FALSE | current_state_FFd1
+
+SRFF_INSTANCE | current_state_FFd2.REG | current_state_FFd2 | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | current_state_FFd2.D | 183 | ? | 0 | 0 | current_state_FFd2 | NULL | NULL | current_state_FFd2.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 174 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSR-IO_1 | 175 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | current_state_FFd2.Q | 186 | ? | 0 | 0 | current_state_FFd2 | NULL | NULL | current_state_FFd2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | current_state_FFd1 | SeqDect_1001_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 173 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd2 | 176 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd2.Q | current_state_FFd2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 174 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_1 | 175 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | current_state_FFd1 | 177 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd1.Q | current_state_FFd1 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | current_state_FFd1.SI | current_state_FFd1 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 173 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd2 | 176 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd2.Q | current_state_FFd2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | current_state_FFd1.D1 | 188 | ? | 0 | 4096 | current_state_FFd1 | NULL | NULL | current_state_FFd1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | current_state_FFd1.D2 | 189 | ? | 0 | 4096 | current_state_FFd1 | NULL | NULL | current_state_FFd1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | x_IBUF | IV_TRUE | current_state_FFd2
+
+SRFF_INSTANCE | current_state_FFd1.REG | current_state_FFd1 | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | current_state_FFd1.D | 187 | ? | 0 | 0 | current_state_FFd1 | NULL | NULL | current_state_FFd1.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 174 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSR-IO_1 | 175 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | rstn_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | current_state_FFd1.Q | 190 | ? | 0 | 0 | current_state_FFd1 | NULL | NULL | current_state_FFd1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+OptxMapped | y_OBUF | SeqDect_1001_COPY_0_COPY_0 | 2155872257 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 173 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd2 | 176 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd2.Q | current_state_FFd2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd1 | 177 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd1.Q | current_state_FFd1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | y_OBUF | 178 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | y_OBUF.Q | y_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | y_OBUF.SI | y_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x_IBUF | 173 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | x_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd2 | 176 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd2.Q | current_state_FFd2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | current_state_FFd1 | 177 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | current_state_FFd1.Q | current_state_FFd1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | y_OBUF.D1 | 192 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | y_OBUF.D2 | 193 | ? | 0 | 4096 | y_OBUF | NULL | NULL | y_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | x_IBUF | IV_FALSE | current_state_FFd2 | IV_TRUE | current_state_FFd1
+
+SRFF_INSTANCE | y_OBUF.REG | y_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | y_OBUF.D | 191 | ? | 0 | 0 | y_OBUF | NULL | NULL | y_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | y_OBUF.Q | 194 | ? | 0 | 0 | y_OBUF | NULL | NULL | y_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | y | SeqDect_1001_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | y_OBUF | 178 | ? | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | y_OBUF.Q | y_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | y | 179 | PO | 0 | 0 | SeqDect_1001_COPY_0_COPY_0 | NULL | NULL | y | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | SeqDect_1001_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | y_OBUF | 1 | NULL | 0 | y | 1 | 41 | 49152
+FBPIN | 3 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 43 | 57344
+FBPIN | 17 | current_state_FFd1 | 1 | NULL | 0 | NULL | 0 | 18 | 49152
+FBPIN | 18 | current_state_FFd2 | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | SeqDect_1001_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | NULL | 0 | rstn_IBUF | 1 | NULL | 0 | 33 | 51200
+FBPIN | 9 | NULL | 0 | x_IBUF | 1 | NULL | 0 | 30 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | SeqDect_1001_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 17 | current_state_FFd2 | NULL | 31 | current_state_FFd1 | NULL | 50 | x | 30
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 17 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 16 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 36 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk | 0 | 0
+
+GLOBAL_FSR | rstn | 0 | 0

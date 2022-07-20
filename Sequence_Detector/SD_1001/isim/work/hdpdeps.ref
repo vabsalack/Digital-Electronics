@@ -1,0 +1,10 @@
+V3 7
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SeqDect_1001.v" 2022/07/20.12:00:18 J.36
+MO work/SeqDect_1001 \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SeqDect_1001.v"
+FL "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SeqDect_1001_tb.v" 2022/07/20.12:43:09 J.36
+MO work/SeqDect_1001_tb_v \
+      FL "C:/non - window/REMOTE GIT/Digital-Electronics/Sequence_Detector/SD_1001/SeqDect_1001_tb.v" \
+      MI SeqDect_1001
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v

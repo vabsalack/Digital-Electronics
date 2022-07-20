@@ -1,0 +1,13 @@
+AUTO_TS_P2P:FROM:x:TO:y:1
+AUTO_TS_P2P:FROM:clk:TO:y:1
+AUTO_TS_F2P:FROM:current_state_FFd2.Q:TO:y:1
+AUTO_TS_F2P:FROM:current_state_FFd1.Q:TO:y:1
+AUTO_TS_F2F:FROM:current_state_FFd2.Q:TO:current_state_FFd2.D:1
+AUTO_TS_F2F:FROM:current_state_FFd1.Q:TO:current_state_FFd2.D:1
+AUTO_TS_P2F:FROM:x:TO:current_state_FFd2.D:1
+AUTO_TS_P2F:FROM:clk:TO:current_state_FFd2.D:1
+AUTO_TS_F2F:FROM:current_state_FFd2.Q:TO:current_state_FFd1.D:1
+AUTO_TS_P2F:FROM:x:TO:current_state_FFd1.D:1
+AUTO_TS_P2F:FROM:clk:TO:current_state_FFd1.D:1
+AUTO_TS_P2F:FROM:clk:TO:FCLKIO_0:1
+AUTO_TS_P2F:FROM:rstn:TO:FSR-IO_1:1
