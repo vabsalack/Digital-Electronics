@@ -97,9 +97,12 @@ module pattern_detector_52_tb_v;
 
 	for( i = 0; i<50; i = i+1)
 	begin
+	
 	$display("time: %0d input x: %0b output: %0b", $time, x, y);
+	
 	//random_clock = $random;
 	//repeat(random_clock) @(posedge clk);
+	
 	tb_in = $random;
 	@ (posedge clk) x = tb_in;
 	end 
